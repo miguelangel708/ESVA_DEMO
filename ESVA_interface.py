@@ -1,6 +1,6 @@
 import streamlit as st
 import time
-import ESVA_automerging as LLM_model
+# import ESVA_automerging as LLM_model
 
 def init():
 
@@ -46,7 +46,8 @@ def init():
             time.sleep(0.5)
             thinking_message.text("thinking...")  # We use st.text instead of st.markdown
             # here in the response put the result of the RAG model
-            response  = LLM_model.process_answer(query)
+            # response  = LLM_model.process_answer(query)
+            response  = "respuesta sin IA"
             # response = "respuesta a la pregunta"
             thinking_message.text(response)
 
