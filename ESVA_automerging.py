@@ -11,6 +11,7 @@ from llama_index.retrievers import AutoMergingRetriever
 from llama_index.indices.postprocessor import SentenceTransformerRerank
 from llama_index.query_engine import RetrieverQueryEngine
 from llama_index.embeddings import HuggingFaceEmbedding
+from dataclasses import dataclass
 
 # OpenAI API key
 openai.api_key = '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'
