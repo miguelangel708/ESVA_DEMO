@@ -13,7 +13,7 @@ from llama_index.query_engine import RetrieverQueryEngine
 from llama_index.embeddings import HuggingFaceEmbedding
 
 # OpenAI API key
-openai.api_key = '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'
+openai.api_key = ''
 
 # Load LLM
 llm = OpenAI(model="gpt-3.5-turbo", temperature=0.1)
