@@ -16,7 +16,7 @@ class LoadModel:
             llm: Instanciated LLM model
         """        
         # OpenAI API key
-        openai.api_key = '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'
+        openai.api_key = os.environ['OpenAi-apiKey']
         # Load LLM
         llm = OpenAI(model = self.model_name, temperature = self.model_temperature)
         return llm
