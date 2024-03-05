@@ -1,5 +1,6 @@
 
 import openai
+import os
 from dataclasses import dataclass
 from llama_index.llms import OpenAI
 
