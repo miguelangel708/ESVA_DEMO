@@ -46,9 +46,7 @@ def init():
             time.sleep(0.5)
             thinking_message.text("thinking...")  # We use st.text instead of st.markdown
             # here in the response put the result of the RAG model
-            #response  = get_answer.generate_answer(query)
-            response  = "respuesta sin IA"
-            # response = "respuesta a la pregunta"
+            response  = get_answer.generate_answer(query)
             thinking_message.text(response)
 
         # save the answer on messages to load the history in line 26
