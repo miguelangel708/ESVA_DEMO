@@ -1,6 +1,6 @@
 import streamlit as st
 import time
-from answer_pipeline import get_answer
+from Backend.answer_pipeline import get_answer
 
 def init():
 

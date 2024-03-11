@@ -5,7 +5,7 @@ class GetAnswer:
 
     query_engine: any
 
-    def generate_answer(query, query_engine):
+    def generate_answer(self, query):
         """The generate_answer method takes as an input the query of the user, and the query engine and generates the answer
         from the RAG Pipeline with the associated metadata of page and document name.
 
@@ -16,7 +16,7 @@ class GetAnswer:
         Returns:
             response (str): RAG pipeline response with associated metadata
         """        
-        response = query_engine.query(query)
+        response = self.query_engine.query(query)
         source_documents = response.source_nodes[0].metadata['file_name']
         page_list = [int(i.metadata['page_label']) for i in response.source_nodes]
         #page_list = sorted(list(set(page_list)))
